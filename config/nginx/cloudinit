@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name 169.254.169.254;
+
+    location ~ /(.*) {
+        set_by_lua $core
+              'local f = assert(io.popen("cc-node cloudinit " .. ngx.arg[1], "r"))
+               local s = assert(f:read("*a"))
+               return s .. ngx.arg[2]' $remote_addr $1;
+        proxy_pass $core;
+    }
+}

@@ -1,0 +1,61 @@
+corenode (17.01.01) stable; urgency=low
+
+  * Updated nginx cloudinit config
+
+ -- Marta Nabozny <marta.nabozny@cloudover.io> 15 Jan 2017 10:00:00 +0200
+
+
+corenode (16.12.08) stable; urgency=low
+
+  * Nginx handles the cloudinit
+  * Systemd service stops cc-node on system shutdown
+
+ -- Marta Nabozny <marta.nabozny@cloudover.io> 23 Dec 2016 10:00:00 +0200
+
+
+corenode (16.09.11) stable; urgency=low
+
+  * New Config API
+  * Systemd service
+  * System update checks
+
+ -- Marta Nabozny <marta.nabozny@cloudover.io> 13 Sep 2016 10:00:00 +0200
+
+
+corenode (16.04.02) stable; urgency=low
+
+  * Updated rules file
+
+ -- Marta Nabozny <martastrzet@gmail.com> 08 Apr 2015 10:00:00 +0200
+
+
+corenode (16.03.01) stable; urgency=low
+
+  * Using common system.call
+  * Debian package contains whole python egg
+  * Node registration could be disabled
+
+ -- Marta Nabozny <martastrzet@gmail.com> 08 Mar 2015 10:00:00 +0200
+
+
+corenode (16.01.05) unstable; urgency=low
+
+  * Applied changes from stable version
+
+ -- Marta Nabozny <martastrzet@gmail.com> 20 Dec 2015 10:00:00 +0200
+
+
+corenode (16.01.03) unstable; urgency=low
+
+  * Refactored hook mechanisms
+
+ -- Marta Nabozny <martastrzet@gmail.com> 20 Dec 2015 10:00:00 +0200
+
+
+corenode (16.01.02) stable; urgency=low
+
+  * Egg based package
+  * Hooks refactored
+  * Fixed hook name in example config
+
+ -- Marta Nabozny <martastrzet@gmail.com> 02 Dec 2015 10:00:00 +0200

@@ -1,0 +1,36 @@
+# Random node token, used to verify node
+AUTH_TOKEN = "RANDOM_AUTH_TOKEN"
+
+# Enable node registration on each boot. Should be disabled after initial setup
+REGISTER = True
+
+# Shared with cloud CPU cores
+CPU = 1
+
+# Shared with cloud memory (Megabytes)
+MEMORY = 2048
+
+# Shared with cloud harddrive space in /images (Megabytes)
+HDD = 10000
+
+# Username used for cloud. Be sure, that this user has access to libvirt
+USERNAME = 'cloudover'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': '/var/lib/cloudOver/logs.sqlite3',
+    },
+    'logs': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': '/var/lib/cloudOver/logs.sqlite3',
+    },
+}
+
+# Unique installation ID for this node
+INSTALLATION_ID = 'RANDOM_INSTALLATION_ID'
+
+APPS = [
+    'corenode.app',
+    'corenetwork.app',
+]
