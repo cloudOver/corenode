@@ -56,16 +56,8 @@ if __name__ == "__main__":
         elif sys.argv[1] == 'stop':
             for driver in drivers:
                 driver.shutdown_node()
-
-        elif len(sys.argv) == 3 and sys.argv[1] == 'log':
-            DriverInterface.get_node_driver().info_log(sys.argv[2])
-        elif len(sys.argv) == 4 and sys.argv[1] == 'log':
-            DriverInterface.get_node_driver().info_log(sys.argv[2], sys.argv[3])
-        elif len(sys.argv) == 3 and sys.argv[1] == 'cloudinit':
-            DriverInterface.get_node_driver().info_cloudinit(sys.argv[2])
-
         else:
-            print_help()
+            DriverInterface.get_core_driver().cli_handle(sys.argv)
     except Exception as e:
         syslog.syslog(syslog.LOG_CRIT, "cc-node: action %s failed: %s" % (sys.argv[1], str(e)))
         stack = traceback.format_exc().splitlines()

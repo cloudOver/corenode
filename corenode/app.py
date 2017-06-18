@@ -10,4 +10,7 @@ MODULE = {
         'network.started': ['corenode.hooks.network_vxlan'],
         'network.stopped': ['corenode.hooks.network_vxlan'],
     },
+    'cli': {
+        'cloudinig': 'corenode.cli.cloudinit',
+    }
 }

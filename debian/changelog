@@ -1,3 +1,10 @@
+corenode (17.06.01) stable; urgency=low
+
+  * Modular CLI for extensions
+
+ -- Marta Nabozny <marta.nabozny@cloudover.io> 17 Jun 2017 10:00:00 +0200
+
+
 corenode (17.04.01) stable; urgency=low
 
   * Updated nginx cloudinit config
