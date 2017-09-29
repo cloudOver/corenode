@@ -1,10 +1,10 @@
 Source: corenode
 Section: contrib
 Priority: extra
-Maintainer: Marta Nabozny <martastrzet@gmail.com>
+Maintainer: Marta Nabozny <marta.nabozny@cloudover.io>
 Build-Depends: debhelper (>= 8.0.0), dh-systemd
 Standards-Version: 3.9.4
-Homepage: http://cloudover.org/overcluster/
+Homepage: http://cloudover.org/
 
 Package: corenode
 Architecture: all
@@ -12,6 +12,5 @@ Depends: corenetwork, libvirt-bin, nginx, nginx-extras, openssh-server, sudo, py
 Suggests: tcpdump, ipython, traceroute
 Conflicts: overcluster-node
 Description: Node configuration package
- This package contains networking scripts to run CoreCluster cloud on
- compute nodes.
+ This package contains node scripts for CoreCluster cloud
 
