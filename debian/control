@@ -8,7 +8,7 @@ Homepage: http://cloudover.org/
 
 Package: corenode
 Architecture: all
-Depends: corenetwork, libvirt-bin, nginx, nginx-extras, openssh-server, sudo, python-libvirt, python, qemu-kvm, kvm, quagga, python-requests, nfs-common, qemu-system
+Depends: corenetwork, libvirt-bin | libvirt-libvirt-daemon-system, libvirt-bin | libvirt-clients, nginx, nginx-extras, openssh-server, sudo, python-libvirt, python, qemu-kvm, kvm, quagga, python-requests, nfs-common, qemu-system
 Suggests: tcpdump, ipython, traceroute
 Conflicts: overcluster-node
 Description: Node configuration package
