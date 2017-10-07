@@ -1,4 +1,4 @@
-corenode (17.10.02) stable; urgency=low
+corenode (17.10.03) stable; urgency=low
 
   * Debian 9 dependencies
   * Updated system service

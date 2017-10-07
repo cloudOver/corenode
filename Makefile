@@ -16,6 +16,7 @@ install:
 	cp qemu_hook.sh $(DESTDIR)/etc/libvirt/hooks/qemu
 	cp lxc_hook.sh $(DESTDIR)/etc/libvirt/hooks/lxc
 	cp network_hook.sh $(DESTDIR)/etc/libvirt/hooks/network
+	cat debian/changelog | head -n 1 | cut -d ' ' -f 2 | sed -e 's/(//g' -e 's/)//g' | tr -d '\n' >> $(DESTDIR)/etc/corenode/version.py
 
 	chmod a+x $(DESTDIR)/etc/libvirt/hooks/lxc
 	chmod a+x $(DESTDIR)/etc/libvirt/hooks/qemu
