@@ -1,4 +1,4 @@
-corenode (17.10.05) stable; urgency=low
+corenode (17.10.06) stable; urgency=low
 
   * Fixed cloudinit cli
   * Debian 9 dependencies
