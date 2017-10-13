@@ -45,5 +45,5 @@ class Cmd(CommandLineBase):
         core_ip = apim._get_core_address()
 
         auth_seed = hashlib.sha256(str(random.random())).hexdigest()
-        auth_hash = self._calc_hash(config.get('node', 'AUTH_TOKEN'), auth_seed)
+        auth_hash = self.apim(config.get('node', 'AUTH_TOKEN'), auth_seed)
         sys.stdout.write("http://%s:8600/%s/%s/%s/" % (core_ip, auth_hash, auth_seed, vm_address))

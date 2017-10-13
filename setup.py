@@ -4,7 +4,7 @@ from setuptools import find_packages
 setup(
   name = 'corenode',
   packages = find_packages(exclude=['config']),
-  version = '17.06.01',
+  version = '17.10.05',
   description = 'CoreCluster node configuration and management package',
   author = 'Marta Nabozny',
   author_email = 'martastrzet@gmail.com',

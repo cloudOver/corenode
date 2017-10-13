@@ -1,9 +1,10 @@
-corenode (17.10.03) stable; urgency=low
+corenode (17.10.05) stable; urgency=low
 
+  * Fixed cloudinit cli
   * Debian 9 dependencies
   * Updated system service
 
- -- Marta Nabozny <marta.nabozny@cloudover.io> 05 Oct 2017 10:00:00 +0200
+ -- Marta Nabozny <marta.nabozny@cloudover.io> 06 Oct 2017 10:00:00 +0200
 
 
 corenode (17.06.01) stable; urgency=low

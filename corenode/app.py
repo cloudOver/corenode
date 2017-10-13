@@ -11,6 +11,6 @@ MODULE = {
         'network.stopped': ['corenode.hooks.network_vxlan'],
     },
     'cli': {
-        'cloudinig': 'corenode.cli.cloudinit',
+        'cloudinit': 'corenode.cli.cloudinit',
     }
 }
